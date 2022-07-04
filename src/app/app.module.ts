@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ContainerComponent } from './components/container/container.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SwiperModule } from "swiper/angular";
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
    ],
   imports: [
     BrowserModule,
