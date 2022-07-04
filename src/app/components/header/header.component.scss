@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   background-color: #fc4444;
   width: 100%;
+  margin-bottom: 2.5rem;
 }
 
 header img {
@@ -25,7 +26,13 @@ header img {
   margin: 0.625rem 0 0.438rem 0;
 }
 
-.search-container input {
+.search-container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-container form input {
   font-size: 0.938rem;
   width: 70%;
   height: 1.75rem;
@@ -34,14 +41,14 @@ header img {
   outline: none;
 }
 
-.search-container button {
+.search-container form button {
   background-color: #000000;
   color: #fff;
   font-weight: bold;
   width: 90%;
   border-radius: 6.25rem;
   border: 3px solid #fc4444;
-  margin: 0 0.75rem 0.313rem;
+  margin: 0 0.75rem 0.313rem 2.5rem;
   padding: 0.313rem 0.75rem 0.313rem;
 }
 

@@ -1,12 +1,15 @@
 <header>
   <img src="../../../assets/images/logo-tindin-w-blue-removebg-preview.png">
     <div class="search-container">
-      <input type="text" class="search" placeholder="Search Game Here...">
+      <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <input type="text" class="search" name="search" ngModel placeholder="Search Game Here...">
         <span>
-        <button type="button">SEARCH</button>
+        <button class="search-button">SEARCH</button>
         </span>
+      </form>
     </div>
       <a href="">
         <i class="bi bi-person"></i>
       </a>
+
 </header>

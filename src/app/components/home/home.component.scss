@@ -1,0 +1,114 @@
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+@import "~swiper/css/navigation";
+
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fc4444;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fc4444;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.game {
+  width: 280px;
+  margin: 10px;
+  height: 330px;
+  overflow: hidden;
+  box-shadow: 4px 3px 8px 0px rgb(200 152 44 / 22%);
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 4px 3px 11px 6px rgb(200 152 44 / 46%);
+    transform: translateY(-3px);
+  }
+
+  &-thumb-container {
+    background-color: #000;
+    position: relative;
+    height: 172px;
+    color: #fff;
+    text-align: center;
+  }
+
+  &-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-description {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 157px;
+  }
+
+  &-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-price {
+    display: flex;
+  }
+}

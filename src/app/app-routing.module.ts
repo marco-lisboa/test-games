@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContainerComponent } from './components/container/container.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    // canActivate: [AuthGaurd],
-    component: ContainerComponent,
-    //loadChildren: () => import('./modulos/modulos.module').then(m => m.ModulosModule)
-  },
+    component: HomeComponent
+   },
+   {
+     path: 'search/:game-search',
+     component: HomeComponent
+   }
 ];
 
 @NgModule({
